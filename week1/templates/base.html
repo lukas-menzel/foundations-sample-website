@@ -8,16 +8,52 @@
   	<meta charset="utf-8"/>
     <!-- include the css from the file static/style.css -->
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='responsive.css') }}">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
   </head>
   <body>
 
-  <!-- this headline will appear on all pages. -->
-  <header>
-    <div class="banner">
-      <h1> All about CODE </h1> 
-      <h3> A really great place. </h3>
-    </div>
-  </header>
+  <!-- theader on all pages -->
+  <header class="header">
+    <div class="container header-grid">
+      <div class="col-1-2">
+        <a href="/"><h1>
+          Lukas Menzel
+        </h1></a>
+      </div>
+      <div class="col-1-2 main-nav">
+        <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about-me">About me</a></li>
+          <li><a href="/contact">Contact</a></li>
+          </ul></nav>
+      </div>
+         
+         </div>
+         <div class="mobile-nav">
+           
+        <!-- Top Navigation Menu -->
+   <div class="topnav">
+     <a href="/"><h1 class="logo">
+       Lukas Menzel
+       </h1></a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+       <i class="fa fa-bars"></i>
+     </a>
+     <nav id="myLinks"> 
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about-me">About me</a></li>
+          <li><a href="/contact">contact</a></li>
+          </ul></nav>
+        </div>
+    
+    
+            </div>
+         </header>
 
   <!-- This is the part which will be different on each page. 
        see first-page.html for an example of using it -->
@@ -26,6 +62,15 @@
     {% endblock %}
   </main>
   <footer>
-    <h3> Made with love </h3>
+    <section class="footer">
+      <div class="container footer-container">
+        <div class="col-1-2">
+          © 2021
+        </div>
+        <div class="col-1-2">
+          Imprint
+        </div>
+      </div>
+        </section>
   </footer>
   </body>

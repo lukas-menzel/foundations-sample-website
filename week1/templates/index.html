@@ -1,22 +1,30 @@
-<!-- This is a basic html page which Flask can serve. 
-It does not use the power of Flask, but is easier to read than some of the other files. 
--->
+{% extends "base.html" %}
 
-<!DOCTYPE html>
-<html>
+{% block content %}
+<section class="section-above-the-field">
+    <div class="container above-the-field">
+      <div class="col-1-1">
+        <h2 class="quote">
+          "I'm product management student at CODE University and Co-Founder of the marketing agency co:listic."
+        </h2>
+      </div>
+    </div>
+  </section>
+  <section id="vita" class="section-vita">
+  <div class="container vita">
+    <div class="col-1-1">
+      <h2>
+        Vita
+      </h2>
+      <p>
+        Bachem grew up in Cologne and taught himself computer programming at the age of 12 years. As a teenager, he ran an online portal for software development and developed websites for corporate customers.</p>
 
-<!-- learn more about what belongs in head and how it is used here 
-https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML -->
-<head>
-	<title>A Static Page</title>
-	<meta charset="utf-8"/>
-    <link rel="stylesheet" href="../static/styles.css">
-</head> 
-<body>
-    <h1 class="banner">Hello, Static HTML!</h1>
-    <p>This page is static HTML, or hard-coded. It is similar to what we did in class the first week on glitch. </p>
-    <p>So far, we are not using the power of Flask, but you will in this assignment!</p>
+<p>Parallel to his studies at Cologne Business School, he developed the video-sharing website sevenload in 2005, which acquired more than €25 million in venture capital while he was still a student and was sold to Hubert Burda Media in 2010.[3][4] Immediately thereafter he founded United Prototype, which developed the social game Fliplife and was acquired in 2012 by German-Turkish gaming company Kaisergames. In his spare time, Bachem developed Lebenslauf.com (engl. Resume.com), an online CV editor which he sold to publicly traded XING AG in 2014.</p>
 
-    <p> To see a page which starts to use Flask to <em>generate</em> dynamic code, <a href="/first-page">click here</a>.</p>
-</body>
-</html>
+<p>In 2016, Bachem founded the CODE University of Applied Sciences in Berlin in an effort to improve the education of software developers since existing computer science courses appeared outdated and too theoretical to him. The accredited private university was granted state recognition by the state of Berlin in July 2017 and commenced its English-language studies in October 2017. Bachem is the youngest university chancellor in Germany.</p>
+
+<p>In addition to its own entrepreneurial activities Bachem supports young startup companies as an angel investor.
+      </p>
+    </div>
+    </div></section>
+{% endblock %}
