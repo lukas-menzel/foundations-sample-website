@@ -93,10 +93,16 @@ nav ul li {
   align-self: center;
 }
 .section-above-the-field {
-  background-image: url(https://thomasbachem.com/photos/thomas-bachem-2020-1.jpg/Thomas%20Bachem%203600x2400%20-%20Credit%20James%20Brooks.jpg);
+  background-image: url(/static/img/lukas-menzel.jpg);
   height: 80vh;
   background-size: cover;
-  box-shadow: inset 0 0 0 2000px rgb(0 0 0 / 40%);
+  background-repeat: no-repeat;
+}
+.section-above-the-field-alt {
+  background-image: url(/static/img/bg.jpg);
+  height: 80vh;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .above-the-field {
   grid-template-columns: 1fr;
@@ -108,7 +114,7 @@ nav ul li {
 .quote {
   font-style: italic;
   color: #fff;
-  width: 50vw;
+  width: 30vw;
   justify-self: center;
 }
 .section-vita {
@@ -118,7 +124,23 @@ nav ul li {
   grid-template-columns: 1fr;
   max-width: 1200px;
 }
-
+.button {
+  margin-left: auto;
+  margin-right: auto;
+  width: 240px;
+  display: block;
+  background: transparent;
+  border: 1px solid #000;
+  border-radius: 50px;
+  padding: 20px 20px;
+  font-family: "Montserrat";
+  font-size: 16px;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: #000;
+  color: #fff;
+}
 .footer {
   background-color: #000000 !important;
   color: #ffffff;
