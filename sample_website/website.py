@@ -4,8 +4,11 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello_world():
-    return '<h1>Hello, Anna Lena!</h1>'
 
+
+<< << << < HEAD
+return '<h1>Hello, Lukas!</h1>'
+== == == =
 
 if __name__ == "__main__":
     app.run(host="localhost", port=8080, debug=True)
