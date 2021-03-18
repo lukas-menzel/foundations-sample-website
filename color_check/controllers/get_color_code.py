@@ -25,7 +25,7 @@ def get_color_code(color_name):
             color_hex_code = data[color_name]
 
     except KeyError:
-        logging.error('KeyError: {color_name}')
-        raise TypeError('KeyError: {color_name}')
+        logging.error(f"KeyError: {color_name}")
+        raise TypeError(f"KeyError: {color_name}")
 
     return color_hex_code

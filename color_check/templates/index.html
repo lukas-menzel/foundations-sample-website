@@ -12,7 +12,7 @@
 
     <form action="/color" method="post">
         <!-- add the contents of your form here -->
-        <label for="color"> Color: <abbr title="This field is mandatory" aria-label="required"></abbr></label>
+        <label for="name"> Color: <abbr title="This field is mandatory" aria-label="required"></abbr></label>
         <input type="text" name="color" id="color" pattern="[a-zA-Z]*" required oninvalid="this.setCustomValidity('Please enter a color name.')"
         oninput="this.setCustomValidity('')">
         <button>Submit</button>

@@ -24,7 +24,7 @@ def show_color():
     # - if the color doesn't exist, give the user a useful error message.
     # - create a log.txt file which records (logs) the user requests.
     if request.method == 'POST':
-        user_submitted_string = request.form["color"].lower()
+        user_submitted_string = request.form.get("color")
         try:
             color_name = user_submitted_string
             color_hex_code = get_color_code(user_submitted_string)
