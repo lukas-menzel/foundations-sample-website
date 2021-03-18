@@ -1,0 +1,1260 @@
+2021-03-14 19:01:53,440 WARNING uwsgi_file_color_check_website uWSGIWorker4Core0 : Warning level log
+2021-03-14 19:01:53,453 ERROR uwsgi_file_color_check_website uWSGIWorker4Core0 : Exception on /color [POST]
+Traceback (most recent call last):
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "color_check/website.py", line 35, in show_color
+    return render_template('color.html', page_title="Show Color", color_name=color_name,
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/templating.py", line 138, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/jinja2/environment.py", line 930, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/jinja2/environment.py", line 883, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/jinja2/environment.py", line 857, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/jinja2/loaders.py", line 127, in load
+    code = environment.compile(source, name, filename)
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/jinja2/environment.py", line 638, in compile
+    self.handle_exception(source=source_hint)
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/color_check/templates/color.html", line 14, in template
+    {% endblock %}
+jinja2.exceptions.TemplateSyntaxError: Encountered unknown tag 'endblock'. You probably made a nesting mistake. Jinja is expecting this tag, but currently looking for 'endif'. The innermost block that needs to be closed is 'if'.
+2021-03-14 19:01:58,250 WARNING uwsgi_file_color_check_website uWSGIWorker4Core0 : Warning level log
+2021-03-14 19:01:58,252 ERROR uwsgi_file_color_check_website uWSGIWorker4Core0 : Exception on /color [POST]
+Traceback (most recent call last):
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "color_check/website.py", line 35, in show_color
+    return render_template('color.html', page_title="Show Color", color_name=color_name,
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/templating.py", line 138, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/jinja2/environment.py", line 930, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/jinja2/environment.py", line 883, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/jinja2/environment.py", line 857, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/jinja2/loaders.py", line 127, in load
+    code = environment.compile(source, name, filename)
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/jinja2/environment.py", line 638, in compile
+    self.handle_exception(source=source_hint)
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/color_check/templates/color.html", line 14, in template
+    {% endblock %}
+jinja2.exceptions.TemplateSyntaxError: Encountered unknown tag 'endblock'. You probably made a nesting mistake. Jinja is expecting this tag, but currently looking for 'endif'. The innermost block that needs to be closed is 'if'.
+2021-03-14 19:02:26,047 WARNING uwsgi_file_color_check_website uWSGIWorker1Core0 : Warning level log
+2021-03-14 19:02:29,288 WARNING uwsgi_file_color_check_website uWSGIWorker4Core1 : Warning level log
+2021-03-14 19:04:07,513 WARNING uwsgi_file_color_check_website uWSGIWorker3Core0 : Warning level log
+2021-03-14 19:04:10,231 WARNING uwsgi_file_color_check_website uWSGIWorker3Core1 : Warning level log
+2021-03-14 19:04:53,660 WARNING uwsgi_file_color_check_website uWSGIWorker1Core0 : Warning level log
+2021-03-14 19:04:53,676 ERROR uwsgi_file_color_check_website uWSGIWorker1Core0 : Exception on /color [POST]
+Traceback (most recent call last):
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "color_check/website.py", line 35, in show_color
+    return render_template('color.html', page_title="Show Color", color_name=color_name,
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/templating.py", line 137, in render_template
+    return _render(
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/color_check/templates/color.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/color_check/templates/base.html", line 29, in top-level template code
+    {% block content%}
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/color_check/templates/color.html", line 4, in block "content"
+    {% if color_name in data.keys() %}
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/jinja2/environment.py", line 471, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'data' is undefined
+2021-03-14 19:04:56,559 WARNING uwsgi_file_color_check_website uWSGIWorker4Core1 : Warning level log
+2021-03-14 19:04:56,564 ERROR uwsgi_file_color_check_website uWSGIWorker4Core1 : Exception on /color [POST]
+Traceback (most recent call last):
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "color_check/website.py", line 35, in show_color
+    return render_template('color.html', page_title="Show Color", color_name=color_name,
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/templating.py", line 137, in render_template
+    return _render(
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/color_check/templates/color.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/color_check/templates/base.html", line 29, in top-level template code
+    {% block content%}
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/color_check/templates/color.html", line 4, in block "content"
+    {% if color_name in data.keys() %}
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/jinja2/environment.py", line 471, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'data' is undefined
+2021-03-14 19:07:28,576 WARNING uwsgi_file_color_check_website uWSGIWorker4Core0 : Warning level log
+2021-03-14 19:07:32,899 WARNING uwsgi_file_color_check_website uWSGIWorker4Core0 : Warning level log
+2021-03-14 19:10:39,202 WARNING uwsgi_file_color_check_website uWSGIWorker3Core1 : Warning level log
+2021-03-14 19:10:39,207 ERROR uwsgi_file_color_check_website uWSGIWorker3Core1 : Exception on /color [POST]
+Traceback (most recent call last):
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "color_check/website.py", line 35, in show_color
+    return render_template('color.html', page_title="Show Color", color_name=color_name,
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/templating.py", line 137, in render_template
+    return _render(
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/color_check/templates/color.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/color_check/templates/base.html", line 29, in top-level template code
+    {% block content%}
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/color_check/templates/color.html", line 4, in block "content"
+    {% if data[color_name] %}
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/jinja2/environment.py", line 452, in getitem
+    return obj[argument]
+jinja2.exceptions.UndefinedError: 'data' is undefined
+2021-03-14 19:10:53,366 WARNING uwsgi_file_color_check_website uWSGIWorker4Core0 : Warning level log
+2021-03-14 19:11:00,491 WARNING uwsgi_file_color_check_website uWSGIWorker3Core1 : Warning level log
+2021-03-14 19:11:17,751 WARNING uwsgi_file_color_check_website uWSGIWorker4Core0 : Warning level log
+2021-03-14 19:12:20,770 WARNING uwsgi_file_color_check_website uWSGIWorker2Core1 : Warning level log
+2021-03-14 19:17:03,985 WARNING uwsgi_file_color_check_website uWSGIWorker1Core0 : Warning level log
+2021-03-14 19:17:19,667 WARNING uwsgi_file_color_check_website uWSGIWorker4Core1 : Warning level log
+2021-03-14 19:17:28,227 WARNING uwsgi_file_color_check_website uWSGIWorker1Core0 : Warning level log
+2021-03-14 19:17:34,382 WARNING uwsgi_file_color_check_website uWSGIWorker4Core1 : Warning level log
+2021-03-14 19:18:52,382 WARNING uwsgi_file_color_check_website uWSGIWorker4Core0 : Warning level log
+2021-03-14 19:18:56,327 WARNING uwsgi_file_color_check_website uWSGIWorker3Core0 : Warning level log
+2021-03-14 19:18:59,372 WARNING uwsgi_file_color_check_website uWSGIWorker3Core1 : Warning level log
+2021-03-14 19:20:10,715 WARNING uwsgi_file_color_check_website uWSGIWorker3Core0 : Warning level log
+2021-03-14 19:20:15,708 WARNING uwsgi_file_color_check_website uWSGIWorker4Core1 : Warning level log
+2021-03-14 19:20:44,306 WARNING uwsgi_file_color_check_website uWSGIWorker4Core0 : Warning level log
+2021-03-14 19:20:48,994 WARNING uwsgi_file_color_check_website uWSGIWorker4Core1 : Warning level log
+2021-03-14 19:21:16,533 WARNING uwsgi_file_color_check_website uWSGIWorker4Core0 : Warning level log
+2021-03-14 19:21:16,548 ERROR uwsgi_file_color_check_website uWSGIWorker4Core0 : Exception on /color [POST]
+Traceback (most recent call last):
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "color_check/website.py", line 35, in show_color
+    return render_template('color.html', page_title="Show Color", color_name=color_name,
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/templating.py", line 137, in render_template
+    return _render(
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/color_check/templates/color.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/color_check/templates/base.html", line 29, in top-level template code
+    {% block content%}
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/color_check/templates/color.html", line 4, in block "content"
+    {% if data[color_name] == TRUE %}
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/jinja2/environment.py", line 452, in getitem
+    return obj[argument]
+jinja2.exceptions.UndefinedError: 'data' is undefined
+2021-03-14 19:21:19,040 WARNING uwsgi_file_color_check_website uWSGIWorker4Core1 : Warning level log
+2021-03-14 19:21:19,042 ERROR uwsgi_file_color_check_website uWSGIWorker4Core1 : Exception on /color [POST]
+Traceback (most recent call last):
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "color_check/website.py", line 35, in show_color
+    return render_template('color.html', page_title="Show Color", color_name=color_name,
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/templating.py", line 137, in render_template
+    return _render(
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/color_check/templates/color.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/color_check/templates/base.html", line 29, in top-level template code
+    {% block content%}
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/color_check/templates/color.html", line 4, in block "content"
+    {% if data[color_name] == TRUE %}
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/jinja2/environment.py", line 452, in getitem
+    return obj[argument]
+jinja2.exceptions.UndefinedError: 'data' is undefined
+2021-03-14 19:21:41,312 WARNING uwsgi_file_color_check_website uWSGIWorker4Core0 : Warning level log
+2021-03-14 19:21:58,738 WARNING uwsgi_file_color_check_website uWSGIWorker4Core0 : Warning level log
+2021-03-14 19:22:00,214 WARNING uwsgi_file_color_check_website uWSGIWorker3Core0 : Warning level log
+2021-03-14 19:22:01,013 WARNING uwsgi_file_color_check_website uWSGIWorker4Core1 : Warning level log
+2021-03-14 19:22:04,609 WARNING uwsgi_file_color_check_website uWSGIWorker3Core1 : Warning level log
+2021-03-14 19:22:18,029 WARNING uwsgi_file_color_check_website uWSGIWorker3Core0 : Warning level log
+2021-03-14 19:22:18,038 ERROR uwsgi_file_color_check_website uWSGIWorker3Core0 : Exception on /color [POST]
+Traceback (most recent call last):
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "color_check/website.py", line 35, in show_color
+    return render_template('color.html', page_title="Show Color", color_name=color_name,
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/templating.py", line 138, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/jinja2/environment.py", line 930, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/jinja2/environment.py", line 883, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/jinja2/environment.py", line 857, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/jinja2/loaders.py", line 127, in load
+    code = environment.compile(source, name, filename)
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/jinja2/environment.py", line 638, in compile
+    self.handle_exception(source=source_hint)
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/color_check/templates/color.html", line 9, in template
+    {% else %}
+jinja2.exceptions.TemplateSyntaxError: Encountered unknown tag 'else'. Jinja was looking for the following tags: 'endblock'. The innermost block that needs to be closed is 'block'.
+2021-03-14 19:22:39,070 WARNING uwsgi_file_color_check_website uWSGIWorker2Core0 : Warning level log
+2021-03-14 19:22:45,859 WARNING uwsgi_file_color_check_website uWSGIWorker2Core1 : Warning level log
+2021-03-14 19:23:57,936 WARNING uwsgi_file_color_check_website uWSGIWorker3Core0 : Warning level log
+2021-03-14 19:23:57,951 ERROR uwsgi_file_color_check_website uWSGIWorker3Core0 : Exception on /color [POST]
+Traceback (most recent call last):
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "color_check/website.py", line 35, in show_color
+    return render_template('color.html', page_title="Show Color", color_name=color_name,
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/templating.py", line 137, in render_template
+    return _render(
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/color_check/templates/color.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/color_check/templates/base.html", line 29, in top-level template code
+    {% block content%}
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/color_check/templates/color.html", line 5, in block "content"
+    {% if color_name in data.keys() %}
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/jinja2/environment.py", line 471, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'data' is undefined
+2021-03-14 19:24:00,564 WARNING uwsgi_file_color_check_website uWSGIWorker3Core1 : Warning level log
+2021-03-14 19:24:00,566 ERROR uwsgi_file_color_check_website uWSGIWorker3Core1 : Exception on /color [POST]
+Traceback (most recent call last):
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "color_check/website.py", line 35, in show_color
+    return render_template('color.html', page_title="Show Color", color_name=color_name,
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/templating.py", line 137, in render_template
+    return _render(
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/color_check/templates/color.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/color_check/templates/base.html", line 29, in top-level template code
+    {% block content%}
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/color_check/templates/color.html", line 5, in block "content"
+    {% if color_name in data.keys() %}
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/jinja2/environment.py", line 471, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'data' is undefined
+2021-03-14 19:25:05,659 WARNING uwsgi_file_color_check_website uWSGIWorker2Core0 : Warning level log
+2021-03-14 19:25:05,668 ERROR uwsgi_file_color_check_website uWSGIWorker2Core0 : Exception on /color [POST]
+Traceback (most recent call last):
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "color_check/website.py", line 35, in show_color
+    return render_template('color.html', page_title="Show Color", color_name=color_name,
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/templating.py", line 138, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/jinja2/environment.py", line 930, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/jinja2/environment.py", line 883, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/jinja2/environment.py", line 857, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/jinja2/loaders.py", line 127, in load
+    code = environment.compile(source, name, filename)
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/jinja2/environment.py", line 638, in compile
+    self.handle_exception(source=source_hint)
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/color_check/templates/color.html", line 5, in template
+    {% if   color_hex_code = get_color_code(user_submitted_string)%}
+jinja2.exceptions.TemplateSyntaxError: expected token 'end of statement block', got '='
+2021-03-14 19:25:08,290 WARNING uwsgi_file_color_check_website uWSGIWorker3Core1 : Warning level log
+2021-03-14 19:25:08,292 ERROR uwsgi_file_color_check_website uWSGIWorker3Core1 : Exception on /color [POST]
+Traceback (most recent call last):
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "color_check/website.py", line 35, in show_color
+    return render_template('color.html', page_title="Show Color", color_name=color_name,
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/templating.py", line 138, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/jinja2/environment.py", line 930, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/jinja2/environment.py", line 883, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/jinja2/environment.py", line 857, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/jinja2/loaders.py", line 127, in load
+    code = environment.compile(source, name, filename)
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/jinja2/environment.py", line 638, in compile
+    self.handle_exception(source=source_hint)
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/color_check/templates/color.html", line 5, in template
+    {% if   color_hex_code = get_color_code(user_submitted_string)%}
+jinja2.exceptions.TemplateSyntaxError: expected token 'end of statement block', got '='
+2021-03-14 19:25:59,708 WARNING uwsgi_file_color_check_website uWSGIWorker3Core1 : Warning level log
+2021-03-14 19:25:59,712 ERROR uwsgi_file_color_check_website uWSGIWorker3Core1 : Exception on /color [POST]
+Traceback (most recent call last):
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "color_check/website.py", line 35, in show_color
+    return render_template('color.html', page_title="Show Color", color_name=color_name,
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/templating.py", line 138, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/jinja2/environment.py", line 930, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/jinja2/environment.py", line 883, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/jinja2/environment.py", line 857, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/jinja2/loaders.py", line 127, in load
+    code = environment.compile(source, name, filename)
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/jinja2/environment.py", line 638, in compile
+    self.handle_exception(source=source_hint)
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/color_check/templates/color.html", line 5, in template
+    {% if color_hex_code = get_color_code(user_submitted_string) %}
+jinja2.exceptions.TemplateSyntaxError: expected token 'end of statement block', got '='
+2021-03-14 19:26:01,894 WARNING uwsgi_file_color_check_website uWSGIWorker4Core0 : Warning level log
+2021-03-14 19:26:01,904 ERROR uwsgi_file_color_check_website uWSGIWorker4Core0 : Exception on /color [POST]
+Traceback (most recent call last):
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "color_check/website.py", line 35, in show_color
+    return render_template('color.html', page_title="Show Color", color_name=color_name,
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/templating.py", line 138, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/jinja2/environment.py", line 930, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/jinja2/environment.py", line 883, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/jinja2/environment.py", line 857, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/jinja2/loaders.py", line 127, in load
+    code = environment.compile(source, name, filename)
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/jinja2/environment.py", line 638, in compile
+    self.handle_exception(source=source_hint)
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/color_check/templates/color.html", line 5, in template
+    {% if color_hex_code = get_color_code(user_submitted_string) %}
+jinja2.exceptions.TemplateSyntaxError: expected token 'end of statement block', got '='
+2021-03-14 19:26:31,808 WARNING uwsgi_file_color_check_website uWSGIWorker3Core0 : Warning level log
+2021-03-14 19:26:31,817 ERROR uwsgi_file_color_check_website uWSGIWorker3Core0 : Exception on /color [POST]
+Traceback (most recent call last):
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "color_check/website.py", line 35, in show_color
+    return render_template('color.html', page_title="Show Color", color_name=color_name,
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/templating.py", line 138, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/jinja2/environment.py", line 930, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/jinja2/environment.py", line 883, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/jinja2/environment.py", line 857, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/jinja2/loaders.py", line 127, in load
+    code = environment.compile(source, name, filename)
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/jinja2/environment.py", line 638, in compile
+    self.handle_exception(source=source_hint)
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/color_check/templates/color.html", line 5, in template
+    {% if color_hex_code=color_hex_code %}
+jinja2.exceptions.TemplateSyntaxError: expected token 'end of statement block', got '='
+2021-03-14 19:26:42,284 WARNING uwsgi_file_color_check_website uWSGIWorker3Core0 : Warning level log
+2021-03-14 19:26:46,062 WARNING uwsgi_file_color_check_website uWSGIWorker4Core1 : Warning level log
+2021-03-14 19:27:59,434 WARNING uwsgi_file_color_check_website uWSGIWorker2Core1 : Warning level log
+2021-03-14 19:27:59,438 ERROR uwsgi_file_color_check_website uWSGIWorker2Core1 : Exception on /color [POST]
+Traceback (most recent call last):
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "color_check/website.py", line 35, in show_color
+    return render_template('color.html', page_title="Show Color", color_name=color_name,
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/templating.py", line 138, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/jinja2/environment.py", line 930, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/jinja2/environment.py", line 883, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/jinja2/environment.py", line 857, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/jinja2/loaders.py", line 127, in load
+    code = environment.compile(source, name, filename)
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/jinja2/environment.py", line 638, in compile
+    self.handle_exception(source=source_hint)
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/color_check/templates/color.html", line 5, in template
+    {% if color_hex_code = get_color_code(user_submitted_string)%}
+jinja2.exceptions.TemplateSyntaxError: expected token 'end of statement block', got '='
+2021-03-14 19:28:02,140 WARNING uwsgi_file_color_check_website uWSGIWorker4Core0 : Warning level log
+2021-03-14 19:28:02,150 ERROR uwsgi_file_color_check_website uWSGIWorker4Core0 : Exception on /color [POST]
+Traceback (most recent call last):
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "color_check/website.py", line 35, in show_color
+    return render_template('color.html', page_title="Show Color", color_name=color_name,
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/templating.py", line 138, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/jinja2/environment.py", line 930, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/jinja2/environment.py", line 883, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/jinja2/environment.py", line 857, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/jinja2/loaders.py", line 127, in load
+    code = environment.compile(source, name, filename)
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/jinja2/environment.py", line 638, in compile
+    self.handle_exception(source=source_hint)
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/color_check/templates/color.html", line 5, in template
+    {% if color_hex_code = get_color_code(user_submitted_string)%}
+jinja2.exceptions.TemplateSyntaxError: expected token 'end of statement block', got '='
+2021-03-14 19:31:09,264 WARNING uwsgi_file_color_check_website uWSGIWorker4Core0 : Warning level log
+2021-03-14 19:31:11,695 WARNING uwsgi_file_color_check_website uWSGIWorker4Core1 : Warning level log
+2021-03-14 19:31:16,271 WARNING uwsgi_file_color_check_website uWSGIWorker3Core0 : Warning level log
+2021-03-14 19:31:19,200 WARNING uwsgi_file_color_check_website uWSGIWorker4Core1 : Warning level log
+2021-03-14 19:32:13,012 WARNING uwsgi_file_color_check_website uWSGIWorker4Core1 : Warning level log
+2021-03-14 19:32:25,702 WARNING uwsgi_file_color_check_website uWSGIWorker3Core0 : Warning level log
+2021-03-14 19:32:28,211 WARNING uwsgi_file_color_check_website uWSGIWorker4Core0 : Warning level log
+2021-03-14 19:32:46,848 WARNING uwsgi_file_color_check_website uWSGIWorker4Core1 : Warning level log
+2021-03-14 19:34:38,108 WARNING uwsgi_file_color_check_website uWSGIWorker4Core0 : Warning level log
+2021-03-14 19:34:45,878 WARNING uwsgi_file_color_check_website uWSGIWorker1Core0 : Warning level log
+2021-03-14 19:34:48,234 WARNING uwsgi_file_color_check_website uWSGIWorker2Core0 : Warning level log
+2021-03-14 19:36:15,846 WARNING uwsgi_file_color_check_website uWSGIWorker2Core0 : Warning level log
+2021-03-14 19:36:17,426 WARNING uwsgi_file_color_check_website uWSGIWorker3Core0 : Warning level log
+2021-03-14 19:36:22,192 WARNING uwsgi_file_color_check_website uWSGIWorker3Core1 : Warning level log
+2021-03-14 19:36:27,495 WARNING uwsgi_file_color_check_website uWSGIWorker4Core1 : Warning level log
+2021-03-14 19:36:52,003 WARNING uwsgi_file_color_check_website uWSGIWorker3Core0 : Warning level log
+2021-03-14 19:37:12,149 WARNING uwsgi_file_color_check_website uWSGIWorker2Core0 : Warning level log
+2021-03-14 19:37:15,765 WARNING uwsgi_file_color_check_website uWSGIWorker4Core1 : Warning level log
+2021-03-14 19:38:03,216 WARNING uwsgi_file_color_check_website uWSGIWorker2Core1 : Warning level log
+2021-03-14 19:38:05,618 WARNING uwsgi_file_color_check_website uWSGIWorker4Core0 : Warning level log
+2021-03-14 19:38:16,957 WARNING uwsgi_file_color_check_website uWSGIWorker2Core0 : Warning level log
+2021-03-14 19:38:20,287 WARNING uwsgi_file_color_check_website uWSGIWorker4Core0 : Warning level log
+2021-03-14 19:38:23,071 WARNING uwsgi_file_color_check_website uWSGIWorker3Core1 : Warning level log
+2021-03-14 19:38:45,135 WARNING uwsgi_file_color_check_website uWSGIWorker3Core0 : Warning level log
+2021-03-14 19:38:46,367 WARNING uwsgi_file_color_check_website uWSGIWorker2Core1 : Warning level log
+2021-03-14 19:38:48,559 WARNING uwsgi_file_color_check_website uWSGIWorker3Core1 : Warning level log
+2021-03-14 19:38:57,682 WARNING uwsgi_file_color_check_website uWSGIWorker3Core0 : Warning level log
+2021-03-14 19:39:02,863 WARNING uwsgi_file_color_check_website uWSGIWorker4Core1 : Warning level log
+2021-03-14 19:39:29,995 WARNING uwsgi_file_color_check_website uWSGIWorker4Core0 : Warning level log
+2021-03-14 19:39:33,522 WARNING uwsgi_file_color_check_website uWSGIWorker4Core1 : Warning level log
+2021-03-14 19:41:45,765 WARNING uwsgi_file_color_check_website uWSGIWorker4Core1 : Warning level log
+2021-03-14 19:41:52,161 WARNING uwsgi_file_color_check_website uWSGIWorker4Core1 : Warning level log
+2021-03-14 19:47:25,133 WARNING uwsgi_file_color_check_website uWSGIWorker4Core1 : Warning level log
+2021-03-14 19:47:27,254 WARNING uwsgi_file_color_check_website uWSGIWorker4Core0 : Warning level log
+2021-03-14 19:48:33,117 WARNING uwsgi_file_color_check_website uWSGIWorker3Core1 : Warning level log
+2021-03-14 19:48:35,611 WARNING uwsgi_file_color_check_website uWSGIWorker4Core0 : Warning level log
+2021-03-14 19:49:22,903 WARNING uwsgi_file_color_check_website uWSGIWorker4Core0 : Warning level log
+2021-03-14 19:49:22,918 ERROR uwsgi_file_color_check_website uWSGIWorker4Core0 : Exception on /color [POST]
+Traceback (most recent call last):
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "color_check/website.py", line 35, in show_color
+    return render_template('color.html', page_title="Show Color", color_name=color_name,
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/templating.py", line 137, in render_template
+    return _render(
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/color_check/templates/color.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/color_check/templates/base.html", line 29, in top-level template code
+    {% block content%}
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/color_check/templates/color.html", line 5, in block "content"
+    {% if data[color_name] == color_hex_code %}
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/jinja2/environment.py", line 452, in getitem
+    return obj[argument]
+jinja2.exceptions.UndefinedError: 'data' is undefined
+2021-03-14 19:49:25,753 WARNING uwsgi_file_color_check_website uWSGIWorker4Core1 : Warning level log
+2021-03-14 19:49:25,755 ERROR uwsgi_file_color_check_website uWSGIWorker4Core1 : Exception on /color [POST]
+Traceback (most recent call last):
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "color_check/website.py", line 35, in show_color
+    return render_template('color.html', page_title="Show Color", color_name=color_name,
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/templating.py", line 137, in render_template
+    return _render(
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/color_check/templates/color.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/color_check/templates/base.html", line 29, in top-level template code
+    {% block content%}
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/color_check/templates/color.html", line 5, in block "content"
+    {% if data[color_name] == color_hex_code %}
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/jinja2/environment.py", line 452, in getitem
+    return obj[argument]
+jinja2.exceptions.UndefinedError: 'data' is undefined
+2021-03-14 19:51:34,818 WARNING uwsgi_file_color_check_website uWSGIWorker3Core0 : Warning level log
+2021-03-14 19:51:40,185 WARNING uwsgi_file_color_check_website uWSGIWorker4Core0 : Warning level log
+2021-03-14 19:51:55,177 WARNING uwsgi_file_color_check_website uWSGIWorker1Core1 : Warning level log
+2021-03-14 19:51:57,535 WARNING uwsgi_file_color_check_website uWSGIWorker4Core0 : Warning level log
+2021-03-14 19:52:01,519 WARNING uwsgi_file_color_check_website uWSGIWorker4Core1 : Warning level log
+2021-03-14 19:52:05,525 WARNING uwsgi_file_color_check_website uWSGIWorker4Core0 : Warning level log
+2021-03-14 19:52:09,464 WARNING uwsgi_file_color_check_website uWSGIWorker4Core1 : Warning level log
+2021-03-14 19:52:13,151 WARNING uwsgi_file_color_check_website uWSGIWorker2Core1 : Warning level log
+2021-03-14 19:52:16,081 WARNING uwsgi_file_color_check_website uWSGIWorker4Core1 : Warning level log
+2021-03-14 19:52:17,784 WARNING uwsgi_file_color_check_website uWSGIWorker3Core0 : Warning level log
+2021-03-14 19:52:20,634 WARNING uwsgi_file_color_check_website uWSGIWorker4Core0 : Warning level log
+2021-03-14 19:52:28,685 WARNING uwsgi_file_color_check_website uWSGIWorker3Core0 : Warning level log
+2021-03-14 19:52:31,729 WARNING uwsgi_file_color_check_website uWSGIWorker4Core1 : Warning level log
+2021-03-14 19:52:34,376 WARNING uwsgi_file_color_check_website uWSGIWorker4Core0 : Warning level log
+2021-03-14 19:54:37,613 WARNING uwsgi_file_color_check_website uWSGIWorker4Core1 : Warning level log
+2021-03-14 19:55:25,595 WARNING uwsgi_file_color_check_website uWSGIWorker2Core1 : Warning level log
+2021-03-14 19:57:39,300 WARNING uwsgi_file_color_check_website uWSGIWorker2Core0 : Warning level log
+2021-03-14 19:57:42,338 WARNING uwsgi_file_color_check_website uWSGIWorker1Core0 : Warning level log
+2021-03-14 19:58:04,079 WARNING uwsgi_file_color_check_website uWSGIWorker4Core1 : Warning level log
+2021-03-14 19:58:08,825 WARNING uwsgi_file_color_check_website uWSGIWorker1Core1 : Warning level log
+2021-03-14 19:58:13,906 WARNING uwsgi_file_color_check_website uWSGIWorker3Core1 : Warning level log
+2021-03-14 19:58:28,591 WARNING uwsgi_file_color_check_website uWSGIWorker2Core0 : Warning level log
+2021-03-14 19:59:05,750 WARNING uwsgi_file_color_check_website uWSGIWorker2Core1 : Warning level log
+2021-03-14 19:59:08,257 WARNING uwsgi_file_color_check_website uWSGIWorker4Core0 : Warning level log
+2021-03-14 19:59:10,605 WARNING uwsgi_file_color_check_website uWSGIWorker4Core1 : Warning level log
+2021-03-14 19:59:19,735 WARNING uwsgi_file_color_check_website uWSGIWorker3Core0 : Warning level log
+2021-03-14 19:59:24,713 WARNING uwsgi_file_color_check_website uWSGIWorker4Core1 : Warning level log
+2021-03-14 19:59:29,422 WARNING uwsgi_file_color_check_website uWSGIWorker4Core1 : Warning level log
+2021-03-14 20:00:12,705 WARNING uwsgi_file_color_check_website uWSGIWorker1Core0 : Warning level log
+2021-03-14 20:00:14,442 WARNING uwsgi_file_color_check_website uWSGIWorker3Core0 : Warning level log
+2021-03-14 20:00:17,046 WARNING uwsgi_file_color_check_website uWSGIWorker1Core1 : Warning level log
+2021-03-14 20:00:33,065 WARNING uwsgi_file_color_check_website uWSGIWorker2Core0 : Warning level log
+2021-03-14 20:00:33,079 ERROR uwsgi_file_color_check_website uWSGIWorker2Core0 : Exception on /color [POST]
+Traceback (most recent call last):
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "color_check/website.py", line 35, in show_color
+    return render_template('color.html', page_title="Show Color", color_name=color_name,
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/templating.py", line 137, in render_template
+    return _render(
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/color_check/templates/color.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/color_check/templates/base.html", line 16, in top-level template code
+    background-color: {{data[color_name]}};
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/jinja2/environment.py", line 452, in getitem
+    return obj[argument]
+jinja2.exceptions.UndefinedError: 'data' is undefined
+2021-03-14 20:00:34,265 WARNING uwsgi_file_color_check_website uWSGIWorker2Core1 : Warning level log
+2021-03-14 20:00:34,273 ERROR uwsgi_file_color_check_website uWSGIWorker2Core1 : Exception on /color [POST]
+Traceback (most recent call last):
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "color_check/website.py", line 35, in show_color
+    return render_template('color.html', page_title="Show Color", color_name=color_name,
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/templating.py", line 137, in render_template
+    return _render(
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/color_check/templates/color.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/color_check/templates/base.html", line 16, in top-level template code
+    background-color: {{data[color_name]}};
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/jinja2/environment.py", line 452, in getitem
+    return obj[argument]
+jinja2.exceptions.UndefinedError: 'data' is undefined
+2021-03-14 20:01:04,517 WARNING uwsgi_file_color_check_website uWSGIWorker3Core0 : Warning level log
+2021-03-14 20:01:14,149 WARNING uwsgi_file_color_check_website uWSGIWorker3Core1 : Warning level log
+2021-03-14 20:01:18,390 WARNING uwsgi_file_color_check_website uWSGIWorker4Core1 : Warning level log
+2021-03-14 20:08:08,324 WARNING uwsgi_file_color_check_website uWSGIWorker3Core0 : Warning level log
+2021-03-14 20:08:27,956 WARNING uwsgi_file_color_check_website uWSGIWorker2Core1 : Warning level log
+2021-03-14 20:08:32,155 WARNING uwsgi_file_color_check_website uWSGIWorker3Core0 : Warning level log
+2021-03-14 20:08:36,095 WARNING uwsgi_file_color_check_website uWSGIWorker4Core1 : Warning level log
+2021-03-14 20:19:14,662 WARNING uwsgi_file_color_check_website uWSGIWorker1Core0 : Warning level log
+2021-03-14 20:21:00,232 WARNING uwsgi_file_color_check_website uWSGIWorker3Core0 : Warning level log
+2021-03-14 20:21:06,666 WARNING uwsgi_file_color_check_website uWSGIWorker2Core1 : Warning level log
+2021-03-14 20:22:31,640 WARNING uwsgi_file_color_check_website uWSGIWorker2Core0 : Warning level log
+2021-03-14 20:22:35,706 WARNING uwsgi_file_color_check_website uWSGIWorker3Core0 : Warning level log
+2021-03-14 20:30:58,570 WARNING uwsgi_file_color_check_website uWSGIWorker4Core1 : Warning level log
+2021-03-14 20:31:02,651 WARNING uwsgi_file_color_check_website uWSGIWorker4Core1 : Warning level log
+2021-03-14 20:31:06,046 WARNING uwsgi_file_color_check_website uWSGIWorker3Core0 : Warning level log
+2021-03-14 20:31:16,841 WARNING uwsgi_file_color_check_website uWSGIWorker2Core0 : Warning level log
+2021-03-14 20:31:20,583 WARNING uwsgi_file_color_check_website uWSGIWorker4Core1 : Warning level log
+2021-03-14 20:31:27,553 WARNING uwsgi_file_color_check_website uWSGIWorker4Core1 : Warning level log
+2021-03-14 20:32:36,890 WARNING uwsgi_file_color_check_website uWSGIWorker4Core0 : Warning level log
+2021-03-18 16:39:07,323 ERROR uwsgi_file_color_check_website uWSGIWorker2Core1 : Exception on /color [POST]
+Traceback (most recent call last):
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "color_check/website.py", line 32, in show_color
+    color_hex_code = get_color_code(user_submitted_string)
+  File "./color_check/controllers/get_color_code.py", line 17, in get_color_code
+    file_json = open(path)
+FileNotFoundError: [Errno 2] No such file or directory: './color_check/controllers/..data/css-color-names.json'
+2021-03-18 16:39:12,347 ERROR uwsgi_file_color_check_website uWSGIWorker4Core0 : Exception on /color [POST]
+Traceback (most recent call last):
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "color_check/website.py", line 32, in show_color
+    color_hex_code = get_color_code(user_submitted_string)
+  File "./color_check/controllers/get_color_code.py", line 17, in get_color_code
+    file_json = open(path)
+FileNotFoundError: [Errno 2] No such file or directory: './color_check/controllers/..data/css-color-names.json'
+2021-03-18 16:39:18,214 ERROR uwsgi_file_color_check_website uWSGIWorker4Core1 : Exception on /color [POST]
+Traceback (most recent call last):
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "color_check/website.py", line 32, in show_color
+    color_hex_code = get_color_code(user_submitted_string)
+  File "./color_check/controllers/get_color_code.py", line 17, in get_color_code
+    file_json = open(path)
+FileNotFoundError: [Errno 2] No such file or directory: './color_check/controllers/..data/css-color-names.json'
+2021-03-18 16:39:45,747 ERROR uwsgi_file_color_check_website uWSGIWorker4Core1 : Exception on /color [POST]
+Traceback (most recent call last):
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "color_check/website.py", line 32, in show_color
+    color_hex_code = get_color_code(user_submitted_string)
+  File "./color_check/controllers/get_color_code.py", line 17, in get_color_code
+    file_json = open(path)
+FileNotFoundError: [Errno 2] No such file or directory: './color_check/controllers/..data/css-color-names.json'
+2021-03-18 16:40:06,129 ERROR uwsgi_file_color_check_website uWSGIWorker4Core0 : Exception on /color [POST]
+Traceback (most recent call last):
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "color_check/website.py", line 32, in show_color
+    color_hex_code = get_color_code(user_submitted_string)
+  File "./color_check/controllers/get_color_code.py", line 17, in get_color_code
+    "/Users/lukasmenzel/se-foundations/foundations-sample-website/color_check/data/css-color-names.json")
+FileNotFoundError: [Errno 2] No such file or directory: './color_check/controllers/..data/css-color-names.json'
+2021-03-18 16:40:09,501 ERROR uwsgi_file_color_check_website uWSGIWorker4Core1 : Exception on /color [POST]
+Traceback (most recent call last):
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "color_check/website.py", line 32, in show_color
+    color_hex_code = get_color_code(user_submitted_string)
+  File "./color_check/controllers/get_color_code.py", line 17, in get_color_code
+    "/Users/lukasmenzel/se-foundations/foundations-sample-website/color_check/data/css-color-names.json")
+FileNotFoundError: [Errno 2] No such file or directory: './color_check/controllers/..data/css-color-names.json'
+2021-03-18 16:40:20,873 WARNING uwsgi_file_color_check_website uWSGIWorker2Core0 : Warning level log
+2021-03-18 16:40:23,598 WARNING uwsgi_file_color_check_website uWSGIWorker2Core1 : Warning level log
+2021-03-18 16:52:38,011 WARNING uwsgi_file_color_check_website uWSGIWorker4Core1 : Warning level log
+2021-03-18 16:53:06,606 WARNING uwsgi_file_color_check_website uWSGIWorker4Core0 : Warning level log
+2021-03-18 16:53:09,978 WARNING uwsgi_file_color_check_website uWSGIWorker2Core1 : Warning level log
+2021-03-18 16:53:13,922 WARNING uwsgi_file_color_check_website uWSGIWorker3Core0 : Warning level log
+2021-03-18 17:02:51,251 WARNING uwsgi_file_color_check_website uWSGIWorker4Core0 : Warning level log
+2021-03-18 17:02:53,880 WARNING uwsgi_file_color_check_website uWSGIWorker2Core1 : Warning level log
+2021-03-18 17:05:35,756 WARNING uwsgi_file_color_check_website uWSGIWorker3Core1 : Warning level log
+2021-03-18 17:05:37,997 WARNING uwsgi_file_color_check_website uWSGIWorker4Core0 : Warning level log
+2021-03-18 17:05:41,151 WARNING uwsgi_file_color_check_website uWSGIWorker3Core0 : Warning level log
+2021-03-18 17:05:44,912 WARNING uwsgi_file_color_check_website uWSGIWorker3Core1 : Warning level log
+2021-03-18 17:13:07,798 ERROR uwsgi_file_color_check_website uWSGIWorker3Core0 : Exception on /color [POST]
+Traceback (most recent call last):
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "color_check/website.py", line 33, in show_color
+    color_hex_code = get_color_code(user_submitted_string)
+  File "./color_check/controllers/get_color_code.py", line 33, in get_color_code
+    return color_hex_code
+UnboundLocalError: local variable 'color_hex_code' referenced before assignment
+2021-03-18 17:13:13,089 ERROR uwsgi_file_color_check_website uWSGIWorker4Core0 : Exception on /color [POST]
+Traceback (most recent call last):
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "color_check/website.py", line 33, in show_color
+    color_hex_code = get_color_code(user_submitted_string)
+  File "./color_check/controllers/get_color_code.py", line 33, in get_color_code
+    return color_hex_code
+UnboundLocalError: local variable 'color_hex_code' referenced before assignment
+2021-03-18 17:14:34,585 ERROR uwsgi_file_color_check_website uWSGIWorker4Core0 : Exception on /color [POST]
+Traceback (most recent call last):
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "color_check/website.py", line 33, in show_color
+    color_hex_code = get_color_code(user_submitted_string)
+  File "./color_check/controllers/get_color_code.py", line 33, in get_color_code
+    return color_hex_code
+UnboundLocalError: local variable 'color_hex_code' referenced before assignment
+2021-03-18 17:14:36,893 ERROR uwsgi_file_color_check_website uWSGIWorker1Core0 : Exception on /color [POST]
+Traceback (most recent call last):
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "color_check/website.py", line 33, in show_color
+    color_hex_code = get_color_code(user_submitted_string)
+  File "./color_check/controllers/get_color_code.py", line 33, in get_color_code
+    return color_hex_code
+UnboundLocalError: local variable 'color_hex_code' referenced before assignment
+2021-03-18 17:14:45,098 ERROR uwsgi_file_color_check_website uWSGIWorker3Core1 : Exception on /color [POST]
+Traceback (most recent call last):
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "color_check/website.py", line 33, in show_color
+    color_hex_code = get_color_code(user_submitted_string)
+  File "./color_check/controllers/get_color_code.py", line 33, in get_color_code
+    return color_hex_code
+UnboundLocalError: local variable 'color_hex_code' referenced before assignment
+2021-03-18 17:16:37,175 ERROR uwsgi_file_color_check_website uWSGIWorker3Core0 : Exception on /color [POST]
+Traceback (most recent call last):
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "color_check/website.py", line 33, in show_color
+    color_hex_code = get_color_code(user_submitted_string)
+  File "./color_check/controllers/get_color_code.py", line 23, in get_color_code
+    data = json.load(file_json)
+NameError: name 'file_json' is not defined
+2021-03-18 17:16:39,398 ERROR uwsgi_file_color_check_website uWSGIWorker4Core1 : Exception on /color [POST]
+Traceback (most recent call last):
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "color_check/website.py", line 33, in show_color
+    color_hex_code = get_color_code(user_submitted_string)
+  File "./color_check/controllers/get_color_code.py", line 23, in get_color_code
+    data = json.load(file_json)
+NameError: name 'file_json' is not defined
+2021-03-18 17:16:42,176 ERROR uwsgi_file_color_check_website uWSGIWorker4Core1 : Exception on /color [POST]
+Traceback (most recent call last):
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "color_check/website.py", line 33, in show_color
+    color_hex_code = get_color_code(user_submitted_string)
+  File "./color_check/controllers/get_color_code.py", line 23, in get_color_code
+    data = json.load(file_json)
+NameError: name 'file_json' is not defined
+2021-03-18 17:17:59,847 ERROR uwsgi_file_color_check_website uWSGIWorker4Core1 : Exception on /color [POST]
+Traceback (most recent call last):
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "color_check/website.py", line 33, in show_color
+    color_hex_code = get_color_code(user_submitted_string)
+  File "./color_check/controllers/get_color_code.py", line 24, in get_color_code
+    data = json.load(file_json)
+NameError: name 'file_json' is not defined
+2021-03-18 17:18:02,590 ERROR uwsgi_file_color_check_website uWSGIWorker4Core0 : Exception on /color [POST]
+Traceback (most recent call last):
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "color_check/website.py", line 33, in show_color
+    color_hex_code = get_color_code(user_submitted_string)
+  File "./color_check/controllers/get_color_code.py", line 24, in get_color_code
+    data = json.load(file_json)
+NameError: name 'file_json' is not defined
+2021-03-18 17:18:20,785 ERROR uwsgi_file_color_check_website uWSGIWorker2Core0 : Exception on /color [POST]
+Traceback (most recent call last):
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "color_check/website.py", line 33, in show_color
+    color_hex_code = get_color_code(user_submitted_string)
+  File "./color_check/controllers/get_color_code.py", line 24, in get_color_code
+    data = json.load(file_json)
+NameError: name 'file_json' is not defined
+2021-03-18 17:18:23,570 ERROR uwsgi_file_color_check_website uWSGIWorker1Core0 : Exception on /color [POST]
+Traceback (most recent call last):
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "color_check/website.py", line 33, in show_color
+    color_hex_code = get_color_code(user_submitted_string)
+  File "./color_check/controllers/get_color_code.py", line 24, in get_color_code
+    data = json.load(file_json)
+NameError: name 'file_json' is not defined
+2021-03-18 17:18:54,651 ERROR uwsgi_file_color_check_website uWSGIWorker2Core0 : Exception on /color [POST]
+Traceback (most recent call last):
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "color_check/website.py", line 33, in show_color
+    color_hex_code = get_color_code(user_submitted_string)
+  File "./color_check/controllers/get_color_code.py", line 24, in get_color_code
+    data = json.load(file_json)
+NameError: name 'file_json' is not defined
+2021-03-18 17:18:57,466 ERROR uwsgi_file_color_check_website uWSGIWorker4Core0 : Exception on /color [POST]
+Traceback (most recent call last):
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/lukasmenzel/se-foundations/foundations-sample-website/venv/lib/python3.9/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "color_check/website.py", line 33, in show_color
+    color_hex_code = get_color_code(user_submitted_string)
+  File "./color_check/controllers/get_color_code.py", line 24, in get_color_code
+    data = json.load(file_json)
+NameError: name 'file_json' is not defined

@@ -1,7 +1,12 @@
 from flask import Flask
-from flask import render_template
+from flask import render_template, request, redirect, url_for
 from color_check.controllers.get_color_code import get_color_code
+import logging
+
 app = Flask(__name__)
+
+logging.basicConfig(filename='/tmp/log.txt', level=logging.DEBUG,
+                    format=f'%(asctime)s %(levelname)s %(name)s %(threadName)s : %(message)s')
 
 
 @app.route('/')
@@ -11,6 +16,7 @@ def index():
 
 @app.route('/color', methods=['POST'])
 def show_color():
+
     # When the user submits the form at /, the contents of the form
     # will be send to this route, and whatever code you write here will
     # be run by your server. In order to render a new page for your user,
@@ -19,13 +25,18 @@ def show_color():
     # - check if the color exists in our list, return the hex code if it does
     # - render a new page which shows a square of that color and its name
     # - if the color doesn't exist, give the user a useful error message.
-    # - create a log.txt file which records (logs) the user requests. 
+    # - create a log.txt file which records (logs) the user requests.
+    if request.method == 'POST':
+        user_submitted_string = request.form["color"].lower()
+        try:
+            color_name = user_submitted_string
+            color_hex_code = get_color_code(user_submitted_string)
+            return render_template('color.html', page_title="Show Color", color_name=color_name,
+                                   color_hex_code=color_hex_code)
 
-    user_submitted_string = 'blue'
-    color_hex_code = get_color_code(user_submitted_string)
-
-    return render_template('color.html', page_title="Show Color",
-                           color_hex_code=color_hex_code)
+        except TypeError:
+            return render_template('no-color.html', page_title="No Color found",
+                                   color_name=user_submitted_string)
 
 
 if __name__ == "__main__":
