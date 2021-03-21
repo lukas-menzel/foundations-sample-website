@@ -1,5 +1,6 @@
 from os import getenv
 from shutil import copyfile
+from datetime import datetime
 
 from flask import Flask, request
 from flask import render_template
@@ -42,11 +43,13 @@ def index():
 def create_meeting():
     try:
         name = request.form.get('name')
+        date = request.form.get('date')
         # app.logger.info(name)
         # turn this into an SQL command. For example:
         # "Adam" --> "INSERT INTO Meetings (name) VALUES("Adam");"
-        sql_insert = "INSERT INTO Meetings (name) VALUES (\"{name}\");".format(
-            name=name)
+        sql_insert = """INSERT INTO Meetings (name, date) VALUES (\"{name}\", \"{date}\");""".format(
+            name=name,
+            date=date)
 
         # connect to the database with the filename configured above
         # returning a 2-tuple that contains a connection and cursor object
@@ -59,7 +62,11 @@ def create_meeting():
 
         # now, get all of the meetings from the database, not just the new one.
         # first, define the query to get all meetings:
-        sql_query = "SELECT * FROM Meetings;"
+        sql_query = "SELECT strftime('%d.%m.%Y', date), name\
+                    FROM Meetings\
+                    WHERE date(date) BETWEEN\
+                    DATE('NOW', '-14 days') AND DATE('NOW')\
+                    ORDER BY date DESC, name ASC; "
 
         # query the database, by passinng the database cursor and query,
         # we expect a list of tuples corresponding to all rows in the database

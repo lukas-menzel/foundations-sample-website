@@ -12,13 +12,31 @@
         <!-- add the contents of your form here -->
         <label for="name"> Today I met: </label>
         <input type="text" name="name" id="name" required>
-        <input type="date" name="meeting-date" id="meeting-date" required>
+        <label for="name"> Date: </label>
+        <input type="date" name="date" id="date" required>
         <input type="submit" value="Submit">
     </form>
 
-    <p> So far, I have met...
-        {{meetings}}
-    </p>
+
+    <table>
+        <p> So far, I have met...
+        </p>
+        
+        <tr>
+            <th>Date</th>
+            <th>name</th>
+        </tr>
+        
+        <!-- display in a table -->
+
+        {% for meet in meetings %}
+            <tr>
+            {% for i in meet %}
+                <td>{{ i }}</td>
+            {% endfor %}
+            </tr>
+        {% endfor %}
+    </table>
 
 
 {% endblock %}
